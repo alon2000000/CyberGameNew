@@ -4668,7 +4668,7 @@ RectTransform:
   m_GameObject: {fileID: 715675988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.0036215319, y: 0.0036215319, z: 0.0036215319}
+  m_LocalScale: {x: 0.0036222222, y: 0.0036222222, z: 0.0036222222}
   m_Children:
   - {fileID: 1358666028}
   m_Father: {fileID: 0}
@@ -8364,7 +8364,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1358666027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -787.7526, y: 431.98578, z: 0}
+  m_LocalPosition: {x: -787.6001, y: 431.90002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 715675993}
@@ -13286,7 +13286,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2012971171}
-  - component: {fileID: 2012971172}
   - component: {fileID: 2012971173}
   m_Layer: 0
   m_Name: Manager
@@ -13308,25 +13307,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2012971172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2012971170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdccd5b62616e14f9fa4cb30ac4d0a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OrangeDye: {fileID: 1868955583210036, guid: 6c452233b9a49764385cb25b2a0b0a03, type: 2}
-  GreenDye: {fileID: 1018072619907758, guid: 53d69b05ae935734082de046a02b34b5, type: 2}
-  PurpleDye: {fileID: 1366447715020408, guid: a4d9a4d4890b3fb47975f6a78f28dbcd, type: 2}
-  IsDoorOpen_Start2Outside: 0
-  IsDoorOpen_Start2Ladder: 0
-  IsDoorOpen_Start2Stairs: 0
-  IsRopeTaken: 0
-  IsRopeOnLadder: 0
 --- !u!212 &2012971173
 SpriteRenderer:
   m_ObjectHideFlags: 0

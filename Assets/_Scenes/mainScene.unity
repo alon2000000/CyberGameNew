@@ -798,9 +798,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfdccd5b62616e14f9fa4cb30ac4d0a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OrangeDye: {fileID: 0}
-  GreenDye: {fileID: 0}
-  PurpleDye: {fileID: 0}
+  OrangeDye: {fileID: 1868955583210036, guid: 6c452233b9a49764385cb25b2a0b0a03, type: 2}
+  GreenDye: {fileID: 1018072619907758, guid: 53d69b05ae935734082de046a02b34b5, type: 2}
+  PurpleDye: {fileID: 1366447715020408, guid: a4d9a4d4890b3fb47975f6a78f28dbcd, type: 2}
   IsDoorOpen_Start2Outside: 0
   IsDoorOpen_Start2Ladder: 0
   IsDoorOpen_Start2Stairs: 0
