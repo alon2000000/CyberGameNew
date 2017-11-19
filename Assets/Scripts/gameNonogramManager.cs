@@ -44,6 +44,7 @@ public class gameNonogramManager : MonoBehaviour {
 
     void Success()
     {
+        GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.DoorSound);
         Door.SetActive(false);
         HotSpot.SetActive(true);
         gameNomogram[] allObjs = GetComponentsInChildren<gameNomogram>();

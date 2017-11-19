@@ -28,10 +28,12 @@ public class pullRope : MonoBehaviour
         if (_counter == 1)
         {
             bellMark1.SetActive(true);
+            GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.BellSound);
         }
         if (_counter == 2)
         {
             bellMark2.SetActive(true);
+            GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.BellSound);
             bellWithRopeOnEarth.SetActive(false);
             bellWithoutRope.SetActive(true);
             ropeOnGround.SetActive(true);

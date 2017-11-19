@@ -32,6 +32,7 @@ public class putPotionOnTree : MonoBehaviour
             ItemsManager.Instance.RemoveItem("Potion");
             _isFruitsOnTree = true;
             FruitsOnTree.SetActive(true);
+            GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.Bloom);
         }
 
         if (ItemsManager.Instance.CurrentItem == "Hammer" && !_isFruitsOnGround && _isFruitsOnTree)
@@ -44,6 +45,7 @@ public class putPotionOnTree : MonoBehaviour
             BlueFruitOnGround2.SetActive(true);
             YellowFruitOnGround.SetActive(true);
             YellowFruitOnGround2.SetActive(true);
+            GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.HitTreeSound);
         }
     }
 }

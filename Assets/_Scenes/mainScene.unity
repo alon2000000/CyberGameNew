@@ -350,7 +350,7 @@ RectTransform:
   m_GameObject: {fileID: 749787323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.022213621, y: 0.022213621, z: 0.022213621}
+  m_LocalScale: {x: 0.0111068105, y: 0.0111068105, z: 0.0111068105}
   m_Children:
   - {fileID: 1011764292}
   - {fileID: 1207184052}
@@ -531,7 +531,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011764291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00064086914, y: 0, z: 0}
+  m_LocalPosition: {x: 0.0006713867, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 749787327}
@@ -803,6 +803,12 @@ MonoBehaviour:
   GreenDye: {fileID: 1018072619907758, guid: 53d69b05ae935734082de046a02b34b5, type: 2}
   PurpleDye: {fileID: 1366447715020408, guid: a4d9a4d4890b3fb47975f6a78f28dbcd, type: 2}
   PickupSound: {fileID: 8300000, guid: f2cf256097d994748a33e4553eb982bf, type: 3}
+  BellSound: {fileID: 8300000, guid: 8bab0e5b35922fe44bfdde6845b9b67d, type: 3}
+  ChestCrushSound: {fileID: 8300000, guid: 7f0c3b9618259af4c801b6423232d6d9, type: 3}
+  DoorSound: {fileID: 8300000, guid: f7600c7790f7d3e4ead4d76f0b58a187, type: 3}
+  FinishSound: {fileID: 8300000, guid: 9f1489c300757dd46afe4babff97d563, type: 3}
+  HitTreeSound: {fileID: 8300000, guid: af0c7d53d19da1a4da723d530c4c58a0, type: 3}
+  Bloom: {fileID: 8300000, guid: 58188fe40b354c642b0d1d1e7d9af6ce, type: 3}
   IsDoorOpen_Start2Outside: 0
   IsDoorOpen_Start2Ladder: 0
   IsDoorOpen_Start2Stairs: 0

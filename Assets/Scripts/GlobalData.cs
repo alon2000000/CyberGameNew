@@ -11,6 +11,12 @@ public class GlobalData : MonoBehaviour
     public GameObject PurpleDye;
 
     public AudioClip PickupSound;
+    public AudioClip BellSound;
+    public AudioClip ChestCrushSound;
+    public AudioClip DoorSound;
+    public AudioClip FinishSound;
+    public AudioClip HitTreeSound;
+    public AudioClip Bloom;
 
     void Awake()
     {

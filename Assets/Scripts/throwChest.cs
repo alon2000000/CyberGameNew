@@ -27,5 +27,12 @@ public class throwChest : MonoBehaviour
         ChestBroken.SetActive(true);
         HammerOnGround.SetActive(true);
         LockOnGround.SetActive(true);
+        StartCoroutine(SoundChestCrush());
+    }
+
+    IEnumerator SoundChestCrush()
+    {
+        yield return new WaitForSeconds(0.5F);
+        GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.ChestCrushSound);
     }
 }

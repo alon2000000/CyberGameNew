@@ -36,5 +36,6 @@ public class paintBell : MonoBehaviour
         GreenBell1.SetActive(false);
         GreenBell2.SetActive(false);
         GreenBell3.SetActive(false);
+        GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.FinishSound);
     }
 }

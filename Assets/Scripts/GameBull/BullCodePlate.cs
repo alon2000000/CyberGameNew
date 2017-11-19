@@ -78,6 +78,7 @@ public class BullCodePlate : MonoBehaviour {
     {
         HotSpot.SetActive(true);
         Door.SetActive(false);
+        GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.DoorSound);
     }
 
     private void WrongGuess(int[] guess, int[] guessResult)
