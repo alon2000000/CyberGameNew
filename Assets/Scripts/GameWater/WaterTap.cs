@@ -5,13 +5,14 @@ using UnityEngine;
 public class WaterTap : MonoBehaviour {
 
     public bool _active;
-    const float TIME_TO_POUR = 2;
+    const float TIME_TO_POUR = 1;
 
     public Sprite TAP_CLOSED;
     public Sprite TAP_OPEN;
 
     SpriteRenderer _sprite;
     GameWater _manager;
+    WaterVail _vail;
 
     bool _isPourWater;
     float _timeToPour;
@@ -19,6 +20,7 @@ public class WaterTap : MonoBehaviour {
 	void Start () {
         _sprite = GetComponent<SpriteRenderer>();
         _manager = transform.parent.Find("GameWaterManager").GetComponent<GameWater>();
+        _vail = transform.parent.Find("Vail").GetComponent<WaterVail>();
         Init();
     }
 	
@@ -53,7 +55,7 @@ public class WaterTap : MonoBehaviour {
             return;
         _isPourWater = true;
         _sprite.sprite = TAP_OPEN;
-        _manager.ObjectClicked("tap");
+        _vail.Fill(30);
 
     }
 

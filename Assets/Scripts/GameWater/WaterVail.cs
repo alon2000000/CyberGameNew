@@ -25,14 +25,10 @@ public class WaterVail : MonoBehaviour {
     int _waterCC;
     GameWater _manager;
 
-    WaterGlass _water20;
-    WaterGlass _water50;
 	// Use this for initialization
 	void Start () {
         _manager = transform.parent.Find("GameWaterManager").GetComponent<GameWater>();
         _sprite = GetComponent<SpriteRenderer>();
-        _water20 = transform.parent.Find("Glass20").GetComponent<WaterGlass>();
-        _water50 = transform.parent.Find("Glass50").GetComponent<WaterGlass>();
 
         _vailBlood = transform.Find("Blood").GetComponent<SpriteRenderer>();
         _vailFrog = transform.Find("Frog").GetComponent<SpriteRenderer>();
@@ -54,41 +50,9 @@ public class WaterVail : MonoBehaviour {
         _eyes = 0;
         UpdateTexture();
     }
-
-    void OnMouseDown()
-    {
-        if (!_active)
-            return;
-        UpdateState();
-        _manager.ObjectClicked("vail");
-    }
-
+        
     void UpdateState()
     {
-        string previewsObj = _manager.GetPreviewsObject();
-        int water = 0;
-        if (previewsObj == "glass20")
-        {
-            water = _water20.GetWater();
-            _water20.Empty();
-        }
-        if (previewsObj == "glass50")
-        {
-            water = _water50.GetWater();
-            _water50.Empty();
-        }
-        if (previewsObj == "frog")
-        {
-            _frogs++;
-        }
-        if (previewsObj == "eyes")
-        {
-            _eyes++;
-        }
-
-        _waterCC += water;
-
-
         while (true)
         {
             if (_waterCC < 20)
@@ -169,5 +133,23 @@ public class WaterVail : MonoBehaviour {
     public bool IsSuccess()
     {
         return (_frogs == 1 && _eyes == 2 && _waterCC == 30);
+    }
+
+    public void Fill(int cc)
+    {
+        _waterCC += cc;
+        UpdateState();
+    }
+
+    public void AddFrog()
+    {
+        _frogs++;
+        UpdateState();
+    }
+
+    public void AddEye()
+    {
+        _eyes++;
+        UpdateState();
     }
 }

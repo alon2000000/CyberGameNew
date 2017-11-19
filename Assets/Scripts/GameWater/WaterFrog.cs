@@ -8,14 +8,18 @@ public class WaterFrog : MonoBehaviour {
     Sprite _sprite;
     public bool _active;
 
+    WaterVail _vail;
+
     const float TIME_TO_CHANGE_DIRECTION = 0.2f;
 
     bool _isMoving;
+
     float _timeToSwitch;
 	// Use this for initialization
 	void Start () {
         _manager = transform.parent.Find("GameWaterManager").GetComponent<GameWater>();
         _sprite = GetComponent<SpriteRenderer>().sprite;
+        _vail = transform.parent.Find("Vail").GetComponent<WaterVail>();
         Init();
     }
         	
@@ -28,17 +32,16 @@ public class WaterFrog : MonoBehaviour {
     {
         if (!_active)
             return;
-        _isMoving = true;
-        _manager.ObjectClicked("frog");
-//        _manager.
+        _vail.AddFrog();
     }
 
     public void Init()
     {
         _active = true;
-        _isMoving = false;
+        _isMoving = true;
         _timeToSwitch = TIME_TO_CHANGE_DIRECTION;
-//        gameObject.SetActive(true);
+    
+        Move();
     }
 
     void Move()
@@ -49,31 +52,16 @@ public class WaterFrog : MonoBehaviour {
             if (_timeToSwitch < 0)
             {
                 _timeToSwitch = TIME_TO_CHANGE_DIRECTION;
-                if(this.transform.rotation.z > 0)
+                if (this.transform.rotation.z > 0)
                     this.transform.Rotate(0, 0, -10);
-                else this.transform.Rotate(0, 0, 10);
+                else
+                    this.transform.Rotate(0, 0, 10);
             }
         }
     }
-
     public void StopMoving()
     {
         _isMoving = false;
         transform.Rotate(0, 0, 0);
-    }
-
-    public void Disable()
-    {
-//        gameObject.SetActive(false);
-    }
-
-    public void ObjectWasClicked(string newObject)
-    {
-        if (newObject == "vail" && _isMoving)
-        {
-            Disable();
-        }
-
-        StopMoving();
     }
 }

@@ -7,6 +7,7 @@ public class WaterEyes : MonoBehaviour {
     public bool _active;
     GameWater _manager;
     Sprite _sprite;
+    WaterVail _vail;
 
     const float TIME_TO_CHANGE_DIRECTION = 0.2f;
 
@@ -16,6 +17,8 @@ public class WaterEyes : MonoBehaviour {
     void Start () {
         _manager = transform.parent.Find("GameWaterManager").GetComponent<GameWater>();
         _sprite = GetComponent<SpriteRenderer>().sprite;
+        _vail = transform.parent.Find("Vail").GetComponent<WaterVail>();
+
         Init();
     }
 
@@ -28,17 +31,14 @@ public class WaterEyes : MonoBehaviour {
     {
         if (!_active)
             return;
-        _isMoving = true;
-        _manager.ObjectClicked("eyes");
-        //        _manager.
+        _vail.AddEye();
     }
 
     public void Init()
     {
         _active = true;
-        _isMoving = false;
+        _isMoving = true;
         _timeToSwitch = TIME_TO_CHANGE_DIRECTION;
-//        gameObject.SetActive(true);
     }
 
     void Move()
@@ -60,20 +60,5 @@ public class WaterEyes : MonoBehaviour {
     {
         _isMoving = false;
         transform.Rotate(0, 0, 0);
-    }
-
-    public void Disable()
-    {
-//        gameObject.SetActive(false);
-    }
-
-    public void ObjectWasClicked(string newObject)
-    {
-        if (newObject == "vail" && _isMoving)
-        {
-            Disable();
-        }
-
-        StopMoving();
     }
 }
