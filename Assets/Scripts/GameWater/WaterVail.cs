@@ -12,6 +12,7 @@ public class WaterVail : MonoBehaviour {
     public Sprite Blood3;
     public Sprite Eyes1;
     public Sprite Eyes2;
+    public Sprite Eyes3;
     public Sprite Frog1;
     public Sprite Frog2;
 
@@ -123,10 +124,16 @@ public class WaterVail : MonoBehaviour {
             _vailEyes.gameObject.SetActive(true);
             _vailEyes.sprite = Eyes1;
         }
-        else
+        else if (_eyes == 2)
         {
             _vailEyes.gameObject.SetActive(true);
             _vailEyes.sprite = Eyes2;
+        }
+        else
+        {
+            _vailEyes.gameObject.SetActive(true);
+            _vailEyes.sprite = Eyes3;
+
         }
     }
 
