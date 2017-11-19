@@ -54,6 +54,12 @@ public class SelectItem : MonoBehaviour
             return;
         }
 
+        if (this.tag == ItemsManager.Instance.CurrentItem)
+        {
+            ItemsManager.Instance.UnselectAllItems();
+            return;
+        }
+
         Debug.Log(this.tag + " item selected");
         ItemsManager.Instance.UnselectAllItems();
         this.GetComponent<Image>().color = Color.red;
