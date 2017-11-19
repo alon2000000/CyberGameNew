@@ -21,6 +21,5 @@ public class PickupWhenClicked : MonoBehaviour
 
         Destroy(this.gameObject);
         ItemsManager.Instance.AddItem(ItemToAddObj);
-        GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.PickupSound);
     }
 }

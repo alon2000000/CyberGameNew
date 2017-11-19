@@ -45,6 +45,7 @@ public class ItemsManager : MonoBehaviour
     {
         GameObject itemInstance = Instantiate(item) as GameObject;
         itemInstance.transform.SetParent(this.transform, false);
+        GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.PickupSound);
     }
 
     public void RemoveItem(string tag)
