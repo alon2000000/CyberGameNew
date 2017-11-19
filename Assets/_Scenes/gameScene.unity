@@ -276,6 +276,7 @@ MonoBehaviour:
   Blood3: {fileID: 21300000, guid: 8d054aad3e303a94dbe1266ca2820235, type: 3}
   Eyes1: {fileID: 21300000, guid: fcb118a7524034e4d827ebe5f6b2522d, type: 3}
   Eyes2: {fileID: 21300000, guid: 1d2b69f611871ed4eade5900a0928a56, type: 3}
+  Eyes3: {fileID: 21300000, guid: 84f2699d7073e004fbfc2737c692b107, type: 3}
   Frog1: {fileID: 21300000, guid: 49290b83d0d68004c91e704ef9d23749, type: 3}
   Frog2: {fileID: 21300000, guid: 8b7290cb74efa8f4aa32d2bba34e73e4, type: 3}
 --- !u!212 &24144074

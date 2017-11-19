@@ -14,9 +14,6 @@ public class GameWater : MonoBehaviour {
     WaterVail _vail;
     WaterBanana _banana;
 
-    bool _is20GlassFull;
-    bool _is50GlassFull;
-
     public void DisableGame()
     {
         _frog._active = false;
