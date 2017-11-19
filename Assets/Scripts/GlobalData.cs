@@ -10,6 +10,8 @@ public class GlobalData : MonoBehaviour
     public GameObject GreenDye;
     public GameObject PurpleDye;
 
+    public AudioClip PickupSound;
+
     void Awake()
     {
         if (Instance == null)
