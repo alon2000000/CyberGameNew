@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEditor.Sprites;
-
 public class WaterBanana : MonoBehaviour {
 
     public bool _active;
