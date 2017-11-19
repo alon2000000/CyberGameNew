@@ -6,6 +6,7 @@ public class Move2RoomWhenClicked : MonoBehaviour
 {
     public string RoomName;
     public bool IsImmediate = false;
+    public string ExceptionItem = "";
 
 	void Start ()
     {
@@ -19,7 +20,7 @@ public class Move2RoomWhenClicked : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (ItemsManager.Instance.CurrentItem != "")
+        if (ItemsManager.Instance.CurrentItem != "" && ItemsManager.Instance.CurrentItem == ExceptionItem)
             return;
 
         if (!IsImmediate)

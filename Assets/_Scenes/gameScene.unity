@@ -365,6 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomLadder
   IsImmediate: 0
+  ExceptionItem: 
 --- !u!61 &30574299
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -888,6 +889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomStart
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &135766820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1001,6 +1003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomLadder
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &188678392
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1186,6 +1189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomStart
   IsImmediate: 0
+  ExceptionItem: 
 --- !u!61 &205714909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1254,6 +1258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomRope
   IsImmediate: 0
+  ExceptionItem: Rope
 --- !u!61 &220678691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1266,7 +1271,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010431051, y: -0.9711261}
+  m_Offset: {x: -0.010431051, y: -0.67178214}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1277,7 +1282,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0599856, y: 0.3665576}
+  m_Size: {x: 1.0599856, y: 0.9652455}
   m_EdgeRadius: 0
 --- !u!1 &247623333
 GameObject:
@@ -2371,6 +2376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomTree
   IsImmediate: 0
+  ExceptionItem: 
 --- !u!61 &476202338
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4642,7 +4648,7 @@ RectTransform:
   m_GameObject: {fileID: 715675988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.0036222222, y: 0.0036222222, z: 0.0036222222}
+  m_LocalScale: {x: 0.0036250001, y: 0.0036250001, z: 0.0036250001}
   m_Children:
   - {fileID: 1358666028}
   m_Father: {fileID: 0}
@@ -4966,6 +4972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: plateOfExitDoor
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &817689130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5964,6 +5971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomRope
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &897231277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6163,6 +6171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomRope
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &949891825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6391,6 +6400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: ptorMinigame
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &990970931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6617,6 +6627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: potionMinigame
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &1002255820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7237,6 +7248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomRoof
   IsImmediate: 0
+  ExceptionItem: 
 --- !u!61 &1155309631
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8220,7 +8232,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1358666027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -787.6001, y: 431.90002, z: 0}
+  m_LocalPosition: {x: -786.987, y: 431.55518, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 715675993}
@@ -9918,6 +9930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomLadder
   IsImmediate: 0
+  ExceptionItem: 
 --- !u!61 &1570908306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10049,6 +10062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: PosterPotion
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &1573897981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10248,7 +10262,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022469282, y: 0.103536844}
+  m_Offset: {x: -0.0037603378, y: -0.25193405}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10259,7 +10273,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4941907, y: 0.2271924}
+  m_Size: {x: 1.05546, y: 0.9381342}
   m_EdgeRadius: 0
 --- !u!1 &1639753518
 GameObject:
@@ -11028,6 +11042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomRope
   IsImmediate: 0
+  ExceptionItem: 
 --- !u!61 &1739766481
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11925,6 +11940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomLadder
   IsImmediate: 0
+  ExceptionItem: Chest
 --- !u!61 &1861544154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12579,6 +12595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: roomStart
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &1914265726
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13725,6 +13742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RoomName: bullMinigame
   IsImmediate: 1
+  ExceptionItem: 
 --- !u!61 &2107754818
 BoxCollider2D:
   m_ObjectHideFlags: 0
