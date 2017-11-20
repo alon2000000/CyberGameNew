@@ -17,6 +17,9 @@ public class GlobalData : MonoBehaviour
     public AudioClip FinishSound;
     public AudioClip HitTreeSound;
     public AudioClip Bloom;
+    public AudioClip Key;
+    public AudioClip BkgrMenu;
+    public AudioClip BkgrGame;
 
     void Awake()
     {

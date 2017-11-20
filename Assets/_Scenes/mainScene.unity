@@ -350,7 +350,7 @@ RectTransform:
   m_GameObject: {fileID: 749787323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.0111068105, y: 0.0111068105, z: 0.0111068105}
+  m_LocalScale: {x: 0.022219626, y: 0.022219626, z: 0.022219626}
   m_Children:
   - {fileID: 1011764292}
   - {fileID: 1207184052}
@@ -531,7 +531,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011764291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0006713867, y: 0, z: 0}
+  m_LocalPosition: {x: 0.00064086914, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 749787327}
@@ -809,6 +809,9 @@ MonoBehaviour:
   FinishSound: {fileID: 8300000, guid: 9f1489c300757dd46afe4babff97d563, type: 3}
   HitTreeSound: {fileID: 8300000, guid: af0c7d53d19da1a4da723d530c4c58a0, type: 3}
   Bloom: {fileID: 8300000, guid: 58188fe40b354c642b0d1d1e7d9af6ce, type: 3}
+  Key: {fileID: 8300000, guid: 0f153e2bf2962f54596ebe710a39833d, type: 3}
+  BkgrMenu: {fileID: 8300000, guid: 68519c02007ef8a4ba1b54f299c54945, type: 3}
+  BkgrGame: {fileID: 8300000, guid: 290b30205f601a3498991a1bfdbad9c2, type: 3}
   IsDoorOpen_Start2Outside: 0
   IsDoorOpen_Start2Ladder: 0
   IsDoorOpen_Start2Stairs: 0
@@ -840,7 +843,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -894,7 +897,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

@@ -13,9 +13,11 @@ public class Manager : MonoBehaviour
 	void Start ()
     {
         Debug.Log("Startttttt");
-	}
-	
-	void Update ()
+        GlobalData.Instance.GetComponent<AudioSource>().clip = GlobalData.Instance.BkgrMenu;
+        GlobalData.Instance.GetComponent<AudioSource>().Play();
+    }
+
+    void Update ()
     {
  
 	}
@@ -27,6 +29,8 @@ public class Manager : MonoBehaviour
 
     public void GoToScene(string sceneName)
     {
+        GlobalData.Instance.GetComponent<AudioSource>().clip = GlobalData.Instance.BkgrGame;
+        GlobalData.Instance.GetComponent<AudioSource>().Play();
         SceneManager.LoadScene(sceneName);
     }
 }

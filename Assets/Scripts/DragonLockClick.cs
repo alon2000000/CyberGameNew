@@ -29,5 +29,6 @@ public class DragonLockClick : MonoBehaviour
         bellWithRopeConnected.SetActive(false);
         bellWithRopeOnEarth.SetActive(true);
         pullRope.SetActive(true);
+        GlobalData.Instance.GetComponent<AudioSource>().PlayOneShot(GlobalData.Instance.Key);
     }
 }
